@@ -1,10 +1,24 @@
 # Homework 2
 
-## поставить node.js - https://nodejs.org/en
+## поставить node.js
+
+[Node](https://nodejs.org/en)
 
 - [x] Установлено
 
-## поставить расширение prettier https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode и форматировать свой код. В vs code можно настроить прогон на сохранения файла
+## поставить расширение prettier
+
+[Prettier](https://marketplace.visualstudio.com/items?itemName=esbenp.prettier-vscode)
+и форматировать свой код. В vs code можно настроить прогон на сохранения файла
+
+- [x] Добавлен файл settings.json
+
+```JSON
+{
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "editor.formatOnSave": true
+}
+```
 
 ## создать ветку для ДЗ - hw-2
 
@@ -16,11 +30,11 @@
 
 ## Отобразить все рестораны из моковых данных (импортируем константу в main.jsx и используем данные). Отображаем рестораны друг за другом.
 
-Название ресторана
-Заголовок - Меню (h3)
-Список названий блюд (используем тег ul и li)
-Заголовок - Отзывы (h3)
-Список текстов отзывов (используем тег ul и li)
+1. Название ресторана
+1. Заголовок - Меню (h3)
+1. Список названий блюд (используем тег ul и li)
+1. Заголовок - Отзывы (h3)
+1. Список текстов отзывов (используем тег ul и li)
 
 ## сделать коммит и запушить
 
