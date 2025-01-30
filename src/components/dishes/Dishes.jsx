@@ -11,15 +11,38 @@ export const Dishes = ({ dishes }) => {
       <ul className="dishes">
         {dishes.map((dish) => (
           <li key={dish.id}>
-            <article className="dish">
-              <h4>{dish.name}</h4>
-              <ul>
-                {dish.ingredients.map((ingredient) => (
-                  <li key={ingredient}>{ingredient}</li>
-                ))}
-              </ul>
-              <p className="price">{dish.price}</p>
-              <Counter />
+            <article
+              className="dish"
+              itemScope
+              itemType="https://schema.org/Product"
+            >
+              <div className="image">
+                <img src="#" alt={dish.name} itemProp="image" />
+              </div>
+              <div className="wrap">
+                <div className="desc">
+                  <h4 itemProp="name">{dish.name}</h4>
+                  <ul className="ingredients">
+                    {dish.ingredients.map((ingredient) => (
+                      <li key={ingredient}>{ingredient}</li>
+                    ))}
+                  </ul>
+                </div>
+                <p
+                  className="price"
+                  itemProp="offers"
+                  itemScope
+                  itemType="https://schema.org/Offers"
+                >
+                  <span itemProp="price">{dish.price}</span>
+                  <span itemProp="priceCurrency" content="RUB">
+                    руб
+                  </span>
+                </p>
+              </div>
+              <div className="counter">
+                <Counter />
+              </div>
             </article>
           </li>
         ))}
