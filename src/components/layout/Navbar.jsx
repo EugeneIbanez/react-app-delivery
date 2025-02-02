@@ -1,11 +1,15 @@
-import { restaurants } from "../../data/mock";
-
-export const Navbar = () => {
+export const Navbar = ({ restaurants, switchRestaurant }) => {
   return (
     <ul>
       {restaurants.map((restaurant) => (
         <li key={restaurant.id}>
-          <button>{restaurant.name}</button>
+          <button
+            className="btn"
+            key={restaurant.id}
+            onClick={() => switchRestaurant(restaurant)}
+          >
+            {restaurant.name}
+          </button>
         </li>
       ))}
     </ul>

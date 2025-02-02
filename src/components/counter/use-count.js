@@ -1,28 +1,22 @@
 import { useState } from "react";
 
 export const useCount = () => {
-  const [count, setCount] = useState({ value: 0 });
+  const [count, setCount] = useState(0);
 
   const onIncrement = () => {
-    setCount((prevState) => {
-      const newValue = prevState.value + 1;
-      return {
-        value: newValue > 5 ? prevState.value : newValue,
-      };
-    });
+    if (count < 5) {
+      setCount(count + 1);
+    }
   };
 
   const onDecrement = () => {
-    setCount((prevState) => {
-      const newValue = prevState.value - 1;
-      return {
-        value: newValue < 0 ? prevState.value : newValue,
-      };
-    });
+    if (count > 0) {
+      setCount(count - 1);
+    }
   };
 
   return {
-    count: count.value,
+    count: count,
     onIncrement,
     onDecrement,
   };

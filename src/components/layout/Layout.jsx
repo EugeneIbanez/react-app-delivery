@@ -1,12 +1,11 @@
 // import { Navbar } from "./Navbar";
-import { RestaurantList } from "../restaurants/RestaurantList";
 
-export const Layout = () => {
+export const Layout = ({ children }) => {
   return (
     <>
       <header>header</header>
       {/* <Navbar /> */}
-      <RestaurantList />
+      {children}
       <footer>footer</footer>
     </>
   );

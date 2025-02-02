@@ -1,4 +1,4 @@
-import { Counter } from "../counter/Counter";
+import { Dish } from "./Dish";
 
 export const Dishes = ({ dishes }) => {
   if (!dishes || !dishes?.length) {
@@ -10,18 +10,7 @@ export const Dishes = ({ dishes }) => {
       <h3>Меню</h3>
       <ul className="dishes">
         {dishes.map((dish) => (
-          <li key={dish.id}>
-            <article className="dish">
-              <h4>{dish.name}</h4>
-              <ul>
-                {dish.ingredients.map((ingredient) => (
-                  <li key={ingredient}>{ingredient}</li>
-                ))}
-              </ul>
-              <p className="price">{dish.price}</p>
-              <Counter />
-            </article>
-          </li>
+          <Dish key={dish.id} dish={dish} />
         ))}
       </ul>
     </>

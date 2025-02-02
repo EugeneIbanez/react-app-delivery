@@ -1,3 +1,5 @@
+import { Review } from "./Review";
+
 export const Reviews = ({ reviews }) => {
   if (!reviews || !reviews?.length) {
     return null;
@@ -8,11 +10,7 @@ export const Reviews = ({ reviews }) => {
       <h3>Отзывы</h3>
       <ul>
         {reviews.map((review) => (
-          <li key={review.id}>
-            <p>{review.user}</p>
-            <p>{review.text}</p>
-            <p>Рейтинг: {review.rating}</p>
-          </li>
+          <Review key={review.id} review={review} />
         ))}
       </ul>
     </>
