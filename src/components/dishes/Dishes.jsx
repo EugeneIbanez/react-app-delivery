@@ -1,4 +1,4 @@
-import { Counter } from "../counter/Counter";
+import { DishCounter } from "../counter/DishCounter";
 
 export const Dishes = ({ dishes }) => {
   if (!dishes || !dishes?.length) {
@@ -40,8 +40,8 @@ export const Dishes = ({ dishes }) => {
                   </span>
                 </p>
               </div>
-              <div className="counter">
-                <Counter />
+              <div className="dishCounter">
+                <DishCounter />
               </div>
             </article>
           </li>
