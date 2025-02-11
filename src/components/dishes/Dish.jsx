@@ -1,4 +1,4 @@
-import { Counter } from "../counter/Counter";
+import { DishCounter } from "../counter/DishCounter";
 
 export const Dish = ({ dish }) => {
   const { name, ingredients, price } = dish;
@@ -13,7 +13,7 @@ export const Dish = ({ dish }) => {
           ))}
         </ul>
         <p className="price">{price}</p>
-        <Counter />
+        <DishCounter />
       </article>
     </li>
   );
