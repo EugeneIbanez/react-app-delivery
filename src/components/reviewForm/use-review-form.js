@@ -20,10 +20,8 @@ const reducer = (form, { type, payload }) => {
       return { ...form, text: payload };
     case ON_INCREMENT_ACTION:
       return { ...form, count: Math.min(form.count + 1, 5) };
-    // return { ...form, count: form.count + 1 };
     case ON_DECREMENT_ACTION:
       return { ...form, count: Math.max(form.count - 1, 0) };
-    // return { ...form, count: form.count - 1 };
     case RESET_ACTION:
       return INITIAL_VALUE;
     default:
