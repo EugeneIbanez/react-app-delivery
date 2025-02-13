@@ -1,11 +1,15 @@
+import styles from "./review.module.css";
+
 export const Review = ({ review }) => {
   const { user, text, rating } = review;
 
   return (
     <li>
-      <p>{user}</p>
-      <p>{text}</p>
-      <p>Рейтинг: {rating}</p>
+      <p className={styles.name}>{user}</p>
+      <p className={styles.text}>{text}</p>
+      <p>
+        Рейтинг: <span className={styles.rating}>{rating}</span>
+      </p>
     </li>
   );
 };
