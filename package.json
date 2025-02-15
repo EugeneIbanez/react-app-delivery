@@ -12,7 +12,8 @@
   "dependencies": {
     "classnames": "^2.5.1",
     "react": "19.0.0",
-    "react-dom": "19.0.0"
+    "react-dom": "19.0.0",
+    "scrollprogress": "^3.0.2"
   },
   "devDependencies": {
     "@eslint/js": "^9.17.0",

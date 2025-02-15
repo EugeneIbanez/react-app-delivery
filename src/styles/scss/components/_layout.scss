@@ -1,0 +1,11 @@
+.container {
+  padding-inline: $ui-step * 3;
+}
+
+.restaurant-item + .restaurant-item {
+  margin-block-start: $ui-step * 12;
+}
+
+main {
+  margin-block: $ui-step * 12;
+}

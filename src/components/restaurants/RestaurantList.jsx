@@ -1,5 +1,5 @@
 import { useState } from "react";
-import { Navbar } from "../layout/Navbar";
+import { Navbar } from "../layout/TabBtns";
 import { ShownRestaurant } from "./ShownRestaurant";
 import { restaurants } from "../../data/mock";
 
@@ -11,9 +11,11 @@ export const RestaurantList = () => {
   };
 
   return (
-    <>
+    <main className="container">
       <Navbar restaurants={restaurants} switchRestaurant={switchRestaurant} />
       <ShownRestaurant shownRestaurant={shownRestaurant} />
-    </>
+      <ShownRestaurant shownRestaurant={shownRestaurant} />
+      <ShownRestaurant shownRestaurant={shownRestaurant} />
+    </main>
   );
 };

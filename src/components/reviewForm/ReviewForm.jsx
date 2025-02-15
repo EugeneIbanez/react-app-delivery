@@ -6,14 +6,16 @@ export const ReviewForm = () => {
     useReviewForm();
   const { user, text, count } = form;
   return (
-    <>
-      <form onSubmit={(e) => e.preventDefault()}>
+    <div className="review-form">
+      <h4>Оставить отзыв</h4>
+      <form className="form" onSubmit={(e) => e.preventDefault()}>
         <div>
           <span>User</span>
           <input
             type="text"
             name="user"
             value={user}
+            placeholder="Enter name"
             onChange={(e) => setUser(e.target.value)}
           />
         </div>
@@ -22,6 +24,7 @@ export const ReviewForm = () => {
           <textarea
             name={text}
             value={text}
+            placeholder="Enter review"
             onChange={(e) => setText(e.target.value)}
           />
         </div>
@@ -33,8 +36,10 @@ export const ReviewForm = () => {
             onDecrement={onDecrement}
           />
         </div>
-        <button onClick={resetForm}>Clear</button>
+        <button className="clear-form" onClick={resetForm}>
+          Clear
+        </button>
       </form>
-    </>
+    </div>
   );
 };

@@ -1,0 +1,16 @@
+.tabBtns {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  gap: $ui-step * 6;
+  margin-block-end: $ui-step * 6;
+
+  & button {
+    background-color: #399173;
+    border: none;
+    padding: $ui-step * 3 $ui-step * 6;
+    font-weight: 600;
+    color: $white;
+    border-radius: $ui-step * 3;
+  }
+}

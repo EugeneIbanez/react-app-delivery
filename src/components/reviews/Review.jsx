@@ -4,11 +4,11 @@ export const Review = ({ review }) => {
   const { user, text, rating } = review;
 
   return (
-    <li>
+    <li className={styles.item}>
       <p className={styles.name}>{user}</p>
       <p className={styles.text}>{text}</p>
-      <p>
-        Рейтинг: <span className={styles.rating}>{rating}</span>
+      <p className={styles.rating}>
+        <span>{rating}</span>
       </p>
     </li>
   );

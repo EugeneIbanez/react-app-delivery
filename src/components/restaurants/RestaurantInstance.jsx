@@ -1,7 +1,7 @@
 export const RestaurantInstance = ({ shownRestaurant, children }) => {
   return (
     <article>
-      <div>{shownRestaurant.name}</div>
+      <h2>{shownRestaurant.name}</h2>
       {children}
     </article>
   );

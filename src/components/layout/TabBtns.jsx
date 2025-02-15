@@ -1,6 +1,6 @@
 export const Navbar = ({ restaurants, switchRestaurant }) => {
   return (
-    <ul>
+    <ul className="tabBtns">
       {restaurants.map((restaurant) => (
         <li key={restaurant.id}>
           <button
