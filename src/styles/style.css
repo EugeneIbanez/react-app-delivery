@@ -271,12 +271,12 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  width: 120px;
+  inline-size: 120px;
 }
 
 .counterBtn {
-  width: 32px;
-  height: 32px;
+  inline-size: 32px;
+  block-size: 32px;
   border: none;
   border-radius: 8px;
   font-size: 24px;
