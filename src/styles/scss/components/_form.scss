@@ -14,8 +14,8 @@
     > span {
       font-size: 1.25rem;
       font-weight: 600;
-      width: $ui-step * 30;
-      padding-bottom: $ui-step;
+      inline-size: $ui-step * 30;
+      padding-block-end: $ui-step;
       flex-shrink: 0;
     }
   }
@@ -24,7 +24,7 @@
     border-radius: $ui-step;
     border: 1px solid $gray-400;
     padding: $ui-step * 2 $ui-step * 4;
-    width: 100%;
+    inline-size: 100%;
   }
 
   input {

@@ -4,12 +4,12 @@
   gap: $ui-step * 3;
   align-items: center;
   justify-content: space-between;
-  width: $ui-step * 30;
+  inline-size: $ui-step * 30;
 }
 
 .counterBtn {
-  width: $ui-step * 8;
-  height: $ui-step * 8;
+  inline-size: $ui-step * 8;
+  block-size: $ui-step * 8;
   border: none;
   border-radius: $ui-step * 2;
   font-size: $ui-step * 6;

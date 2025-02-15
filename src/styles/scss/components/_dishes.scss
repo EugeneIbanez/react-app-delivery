@@ -3,5 +3,5 @@
   flex-direction: column;
   gap: $ui-step * 3;
   margin-block-end: $ui-step * 6;
-  max-width: $ui-step * 150;
+  max-inline-size: $ui-step * 150;
 }
