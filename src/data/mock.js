@@ -4,18 +4,42 @@ export const restaurants = [
     name: "Dishoom",
     menu: [
       {
+        imgs: {
+          jpg1: "./src/images/masala-1x.jpg",
+          jpg2: "./src/images/masala-2x.jpg",
+          webp1: "./src/images/masala-1x.webp",
+          webp2: "./src/images/masala-2x.webp",
+          avif1: "./src/images/masala-1x.avif",
+          avif2: "./src/images/masala-2x.avif",
+        },
         id: "d75f762a-eadd-49be-8918-ed0daa8dd024",
         name: "Chicken tikka masala",
         price: 12,
         ingredients: ["chicken", "rice"],
       },
       {
+        imgs: {
+          jpg1: "./src/images/naan-1x.jpg",
+          jpg2: "./src/images/naan-2x.jpg",
+          webp1: "./src/images/naan-1x.webp",
+          webp2: "./src/images/naan-2x.webp",
+          avif1: "./src/images/naan-1x.avif",
+          avif2: "./src/images/naan-2x.avif",
+        },
         id: "c3cb8f92-a2ed-4716-92a1-b6ea813e9049",
         name: "Naan",
         price: 3,
         ingredients: ["bread"],
       },
       {
+        imgs: {
+          jpg1: "./src/images/samosa-1x.jpg",
+          jpg2: "./src/images/samosa-2x.jpg",
+          webp1: "./src/images/samosa-1x.webp",
+          webp2: "./src/images/samosa-2x.webp",
+          avif1: "./src/images/samosa-1x.avif",
+          avif2: "./src/images/samosa-2x.avif",
+        },
         id: "bd129641-c0eb-432b-84b6-8b81d2930358",
         name: "Samosa",
         price: 8,
@@ -42,12 +66,28 @@ export const restaurants = [
     name: "Homeslice",
     menu: [
       {
+        imgs: {
+          jpg1: "./src/images/margarita-1x.jpg",
+          jpg2: "./src/images/margarita-2x.jpg",
+          webp1: "./src/images/margarita-1x.webp",
+          webp2: "./src/images/margarita-2x.webp",
+          avif1: "./src/images/margarita-1x.avif",
+          avif2: "./src/images/margarita-2x.avif",
+        },
         id: "25402233-0095-49ea-9939-1e67ed89ffb9",
         name: "Margarita",
         price: 9,
         ingredients: ["bread", "cheese", "tomatoes"],
       },
       {
+        imgs: {
+          jpg1: "./src/images/chef-1x.jpg",
+          jpg2: "./src/images/chef-2x.jpg",
+          webp1: "./src/images/chef-1x.webp",
+          webp2: "./src/images/chef-2x.webp",
+          avif1: "./src/images/chef-1x.avif",
+          avif2: "./src/images/chef-2x.avif",
+        },
         id: "90902233-0095-49ea-9939-1e67ed89ffb9",
         name: "Chef pizza",
         price: 10,
@@ -80,18 +120,42 @@ export const restaurants = [
     name: "Fabrique",
     menu: [
       {
+        imgs: {
+          jpg1: "./src/images/buns-1x.jpg",
+          jpg2: "./src/images/buns-2x.jpg",
+          webp1: "./src/images/buns-1x.webp",
+          webp2: "./src/images/buns-2x.webp",
+          avif1: "./src/images/buns-1x.avif",
+          avif2: "./src/images/buns-2x.avif",
+        },
         id: "08c9ffa0-d003-4310-9e15-20978743296e",
         name: "Cinnamon buns",
         price: 5,
         ingredients: ["bread"],
       },
       {
+        imgs: {
+          jpg1: "./src/images/semlor-1x.jpg",
+          jpg2: "./src/images/semlor-2x.jpg",
+          webp1: "./src/images/semlor-1x.webp",
+          webp2: "./src/images/semlor-2x.webp",
+          avif1: "./src/images/semlor-1x.avif",
+          avif2: "./src/images/semlor-2x.avif",
+        },
         id: "64a4967c-2080-4a99-9074-4655a4569a95",
         name: "Semlor",
         price: 2,
         ingredients: ["bread", "cream"],
       },
       {
+        imgs: {
+          jpg1: "./src/images/saffron-1x.jpg",
+          jpg2: "./src/images/saffron-2x.jpg",
+          webp1: "./src/images/saffron-1x.webp",
+          webp2: "./src/images/saffron-2x.webp",
+          avif1: "./src/images/saffron-1x.avif",
+          avif2: "./src/images/saffron-2x.avif",
+        },
         id: "4bc8528e-26d1-46c3-a522-8e18d10c8c84",
         name: "Saffron bun",
         price: 4,
@@ -112,12 +176,28 @@ export const restaurants = [
     name: "Flat Iron",
     menu: [
       {
+        imgs: {
+          jpg1: "./src/images/steak-1x.jpg",
+          jpg2: "./src/images/masala-2x.jpg",
+          webp1: "./src/images/masala-1x.webp",
+          webp2: "./src/images/masala-2x.webp",
+          avif1: "./src/images/masala-1x.avif",
+          avif2: "./src/images/masala-2x.avif",
+        },
         id: "6c02c2ce-b868-4191-b4a7-8686429f4bac",
         name: "Flat Iron Steak",
         price: 10,
         ingredients: ["beef"],
       },
       {
+        imgs: {
+          jpg1: "./src/images/burger-1x.jpg",
+          jpg2: "./src/images/masala-2x.jpg",
+          webp1: "./src/images/masala-1x.webp",
+          webp2: "./src/images/masala-2x.webp",
+          avif1: "./src/images/masala-1x.avif",
+          avif2: "./src/images/masala-2x.avif",
+        },
         id: "99bb6fbb-e53b-4b7e-b9c2-23b63b77385d",
         name: "Flat Iron Burger",
         price: 10,

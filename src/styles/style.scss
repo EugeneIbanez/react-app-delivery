@@ -1,8 +1,10 @@
-@import "./scss/functions";
-
 @import "./scss/variables";
+@import "./scss/typography";
 @import "./scss/root";
+
+@import "./scss/scrollspy";
+@import "./scss/functions";
 
 @import "./scss/grid";
 
-@import "../components/dishes/dishes";
+@import "./scss/components.scss";

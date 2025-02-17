@@ -5,7 +5,7 @@ import { RestaurantInstance } from "./RestaurantInstance";
 
 export const ShownRestaurant = ({ shownRestaurant }) => {
   return (
-    <div>
+    <div className="restaurant-item">
       <RestaurantInstance shownRestaurant={shownRestaurant}>
         <Dishes dishes={shownRestaurant.menu} />
         <Reviews reviews={shownRestaurant.reviews} />

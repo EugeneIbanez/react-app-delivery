@@ -1,0 +1,105 @@
+.dish {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+  gap: $ui-step * 3;
+  padding: $ui-step * 3;
+  transition: 0.3s;
+  border: 1px solid $gray-200;
+  border-radius: $ui-step * 6;
+
+  .image {
+    height: 100px;
+    width: 100px;
+    background-color: $gray-400;
+    border-radius: $ui-step * 3;
+    overflow: hidden;
+
+    * {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+  }
+
+  .desc {
+    display: flex;
+    flex-direction: row;
+    gap: $ui-step * 6;
+  }
+
+  .ingredients {
+    display: flex;
+    flex-direction: row;
+    gap: $ui-step;
+    margin-block-start: $ui-step * 2;
+    font-size: 0.875rem;
+    color: $gray-500;
+  }
+
+  & li {
+    &:not(:last-child):after {
+      content: ", ";
+    }
+  }
+
+  .ecom {
+    display: flex;
+    flex-direction: column;
+    gap: $ui-step * 3;
+    align-items: center;
+    justify-content: center;
+  }
+
+  & .price {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-end;
+    gap: $ui-step;
+    font-weight: 600;
+    font-size: 1.25rem;
+    color: #399173;
+
+    & span {
+      font-size: 1rem;
+    }
+  }
+
+  & .counter {
+    align-self: center;
+
+    & span {
+      font-weight: 600;
+    }
+  }
+
+  button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #399173;
+    transition: 0.3s;
+    line-height: 1;
+    color: $white;
+
+    &:hover {
+      background-color: #3eac87;
+    }
+  }
+}
+
+@media (min-width: 576px) {
+  .dish {
+    flex-direction: row;
+    align-items: stretch;
+
+    & .wrap {
+      justify-content: space-between;
+    }
+
+    & .counter {
+      align-self: end;
+    }
+  }
+}

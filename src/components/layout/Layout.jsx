@@ -1,10 +1,10 @@
-// import { Navbar } from "./Navbar";
+import { ProgressBar } from "../progress-bar/progress-bar";
 
 export const Layout = ({ children }) => {
   return (
     <>
+      <ProgressBar />
       <header>header</header>
-      {/* <Navbar /> */}
       {children}
       <footer>footer</footer>
     </>

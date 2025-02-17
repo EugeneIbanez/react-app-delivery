@@ -1,0 +1,40 @@
+.item {
+  display: grid;
+  grid-template-columns: 50px 1fr;
+  grid-template-areas:
+    "name name"
+    "rating text";
+  padding-block: 24px;
+  border-bottom: 1px solid#ccc;
+}
+
+.name {
+  font-size: 1.25rem;
+  font-weight: 600;
+  grid-area: name;
+  margin-block-end: 12px;
+}
+
+.text {
+  font-size: 18px;
+  grid-area: text;
+  display: flex;
+  align-items: center;
+}
+
+.rating {
+  color: brown;
+  font-size: 2rem;
+  font-weight: 600;
+  grid-area: rating;
+}
+
+.rating span {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 12px;
+  height: 36px;
+  width: 36px;
+  background-color: orange;
+}
