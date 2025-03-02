@@ -2,7 +2,6 @@ import { DishCounter } from "../counter/DishCounter";
 
 export const Dish = ({ dish }) => {
   const { imgs, name, ingredients, price } = dish;
-
   return (
     <li>
       <article className="dish" itemScope itemType="https://schema.org/Product">

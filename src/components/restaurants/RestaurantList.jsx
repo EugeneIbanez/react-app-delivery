@@ -18,8 +18,6 @@ export const RestaurantList = () => {
     <main className="container">
       <Navbar restaurants={restaurants} switchRestaurant={switchRestaurant} />
       <ShownRestaurant shownRestaurant={shownRestaurant} />
-      <ShownRestaurant shownRestaurant={shownRestaurant} />
-      <ShownRestaurant shownRestaurant={shownRestaurant} />
     </main>
   );
 };
