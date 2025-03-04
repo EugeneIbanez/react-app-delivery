@@ -4,7 +4,7 @@ export const Review = ({ review }) => {
   const { user, text, rating } = review;
 
   return (
-    <li className={styles.item}>
+    <li>
       <p className={styles.name}>{user}</p>
       <p className={styles.text}>{text}</p>
       <p className={styles.rating}>

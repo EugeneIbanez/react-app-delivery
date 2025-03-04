@@ -1,8 +1,7 @@
-import { useState, use } from "react";
+import { useState } from "react";
 import { Navbar } from "../layout/TabBtns";
 import { ShownRestaurant } from "./ShownRestaurant";
 import { restaurants } from "../../data/mock";
-import { ThemeContext } from "../app/App";
 
 export const RestaurantList = () => {
   const [shownRestaurant, setShownRestaurant] = useState(restaurants[0]);
@@ -10,9 +9,6 @@ export const RestaurantList = () => {
   const switchRestaurant = (selected) => {
     setShownRestaurant(selected);
   };
-
-  const theme = use(ThemeContext);
-  console.log(theme);
 
   return (
     <main className="container">
